@@ -1,4 +1,4 @@
-﻿namespace Heritage.Entities
+namespace Heritage.Entities
 {
     //Implementação Básica da Conta 
     class Account
@@ -18,9 +18,10 @@
             Balance = balance;
         }
         //Retirar-Quantia
-        public void Withdraw(double amount)
+
+        public virtual void Withdraw(double amount)
         {
-            Balance -= amount;
+            Balance -= amount + 5.0;
         }
         //Depositar-Quantia
         public void Deposit(double amount)
